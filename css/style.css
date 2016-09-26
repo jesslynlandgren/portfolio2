@@ -1,0 +1,227 @@
+/******************************************************/
+/*Document*/
+
+* {
+  box-sizing: border-box;
+}
+
+.html {
+
+}
+
+.body {
+  font-family: 'Questrial', 'Arial', sans-serif;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container2 {
+  position: relative;
+  top: 70px;
+}
+
+/******************************************************/
+/*ROW navigation*/
+
+.navigation {
+  display: flex;
+  /*align-items: center;*/
+  height: 70px;
+  background-color: #1b67a1;
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  height: 100%;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 3em;
+  font-family: 'Questrial', 'Arial', sans-serif;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.menu ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  font-size: 1.4em;
+  color: white;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  color: #1b67a1;
+  background-color: rgba(255,255,255,.7);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.social ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.7em;
+  color: white;
+  padding: 0 7px 0 7px;
+}
+
+.social ul li a:hover {
+  text-decoration: none;
+}
+
+/******************************************************/
+/*ROW home*/
+.home {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("../img/twitter_py_background.jpg");
+  background-size: cover;
+  /*top: 70px;*/
+}
+
+.filter{
+  background-color: rgba(0,0,0,.8);
+  position: absolute;
+  overflow: hidden;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.profilepic {
+  text-align: center;
+}
+
+.avatar {
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  box-shadow: 0px -1px 10px rgba(0,0,0,.8);
+}
+
+.hello {
+  padding: 50px 50px 50px 50px;
+  color: white;
+}
+
+.heading {
+  font-size: 5em;
+  font-family: 'Questrial', 'Arial', sans-serif;
+  padding: 0 0 0 20px;
+  z-index: 200;
+}
+
+.tagline {
+  padding: 20px;
+  font-size: 1.7em;
+  font-style: italic;
+}
+
+.tagline-small {
+  font-size: .9em;
+}
+
+.dclink {
+  font-style: normal;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.summary {
+  padding: 20px 0 0 0;
+}
+
+.summary .col-xs-12 {
+  text-align: center;
+}
+
+.summary .fa {
+  font-size: 3em;
+  color: #288ecb;
+}
+
+.summary h1{
+  /*color: #1771b6;*/
+  color: white;
+  font-size: 22px;
+}
+
+.summary p{
+
+}
+
+/******************************************************/
+/*ROW about*/
+.about {
+  background-color: white;
+}
+
+/******************************************************/
+/*ROW skills*/
+.skills {
+  background-color: #288ecb;
+}
+
+/******************************************************/
+/*ROW interests*/
+.interests{
+  background-color: white;
+}
+
+/******************************************************/
+/*ROW portfolio*/
+.portfolio {
+  background-color: #288ecb;
+}
+
+/******************************************************/
+/*ROW contact*/
+.contact {
+  background-color: white;
+}
