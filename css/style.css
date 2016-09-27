@@ -239,23 +239,23 @@ a:hover {
   color: white;
 }
 
-.contact-card .contact-social {
+.contact-card .about-social {
   display: flex;
   justify-content: center;
   font-size: 1.7em;
 }
 
-.contact-card .contact-social ul {
+.contact-card .about-social ul {
   display: flex;
   flex-direction: row;
 }
 
-.contact-card .contact-social ul li a{
+.contact-card .about-social ul li a{
   padding-left: 10px;
   color: #0c6fbc;
 }
 
-.contact-card .contact-social ul li a:hover {
+.contact-card .about-social ul li a:hover {
   text-decoration: none;
 }
 
@@ -269,29 +269,104 @@ a:hover {
 /******************************************************/
 /*ROW skills*/
 .skills {
-  background-color: #1d85c0;
-}
-
-/******************************************************/
-/*ROW interests*/
-.interests{
   background-color: white;
+  border-color: 1px solid red;
 }
 
 /******************************************************/
 /*ROW portfolio*/
 .portfolio {
-  background-color: #1d85c0;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
+
+.portfolio h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.portfolio .col-sm-3 h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.portfolio .col-sm-3 img{
+  width: 50%;
+  height: auto;
+}
+
+.portfolio .col-sm-3 p {
+  font-weight: bold;
+  font-size: .8em;
+
+}
+
+/******************************************************/
+/*ROW blog*/
+.blog{
+  background-color: #0c6fbc;
+  padding: 100px 0 100px 0;
+  display: flex;
+  text-align: center;
+}
+
+.blog .medium a{
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Questrial', sans-serif;
+  color: #545454;
+  background-color: white;
+  border-bottom: 3px solid #dedede;
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px;
+}
+
+.blog .medium a:hover{
+  background-color: #dedede;
+}
+
 
 /******************************************************/
 /*ROW contact*/
 .contact {
   background-color: #6e6e71;
   padding: 10px 20px 10px 20px;
+  color: white;
 }
 
+.contact h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.contact .contact-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.contact-social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-social ul li a{
+  padding-left: 10px;
+  color: #0c6fbc;
+}
+
+.contact-social ul li a:hover {
+  text-decoration: none;
+}
+
+
 .contact .copyright{
+  padding-top: 20px;
   color: white;
   float: right;
 }
