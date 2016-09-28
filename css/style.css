@@ -155,7 +155,7 @@ a:hover {
 
 .heading {
   font-size: 5em;
-  font-family: 'Questrial', 'Arial', sans-serif;
+  font-family: 'Raleway Dots', 'Arial', sans-serif;
   padding: 0 0 0 20px;
   z-index: 200;
 }
@@ -168,6 +168,7 @@ a:hover {
 
 .tagline-small {
   font-size: .9em;
+  display: none;
 }
 
 .dclink {
@@ -202,6 +203,8 @@ a:hover {
 /*ROW about*/
 .about {
   background-color: white;
+  /*display: flex;
+  align-items: center;*/
 }
 
 .contact-card {
@@ -214,14 +217,15 @@ a:hover {
 
 .contact-card h1 {
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway Dots', sans-serif;
   font-size: 2em;
-  font-weight: bold;
   color: #000;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .contact-form {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: 'Questrial', sans-serif;
 }
 
@@ -231,8 +235,11 @@ a:hover {
 }
 
 .contact-form .form-group label {
+  display: flex;
+  justify-content: flex-end;
   color: #000;
   font-weight: bold;
+  padding: 0;
 }
 
 .contact-form a {
@@ -262,15 +269,106 @@ a:hover {
 .story {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 10px 50px 0px 50px;
 }
 
+.story h1 {
+  text-transform: uppercase;
+  font-family: 'Raleway Dots', sans-serif;
+  font-size: 2em;
+  color: #000;
+}
+
+.story h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.2em;
+  color: #2093d1;
+}
+
+.story p {
+  color: #000;
+  font-style: italic;
+}
 
 /******************************************************/
 /*ROW skills*/
 .skills {
   background-color: white;
-  border-color: 1px solid red;
+  border: 50px solid rgba(12,111,188,.9);
+  padding: 20px;
+}
+
+.skills .grid {
+  display: flex;
+  align-items: center;
+}
+
+.skills h1{
+  font-family: 'Raleway Dots', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.skills .TBD {
+  font-size: 6em;
+  text-align: center;
+}
+
+.skills .profexp {
+
+
+}
+
+.skills .timeline {
+  margin-bottom: 20px;
+}
+
+.skills .experience {
+  border-left: 1px solid #0c6fbc;
+  padding-left: 24px;
+  margin-left: 70px;
+}
+
+.skills .experience ul {
+  list-style: none;
+}
+
+.skills .experience ul .date {
+  font-size: 11px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skills .experience ul .company {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.skills .experience li.company a {
+  position: relative;
+  color: #000;
+}
+
+.skills .col-sm-4 .experience .timeline li.company a:before {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 4px;
+  top: 5px;
+  left: -29px;
+  background: #0c6fbc;
+  content: "";
+}
+
+.skills .experience ul .position {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.skills .learnmore {
+  color: white;
+  background-color: #0c6fbc;
+  border-radius: 4px;
+  padding: 10px 10px 5px 10px;
+  margin-left: 70px;
 }
 
 /******************************************************/
@@ -278,12 +376,14 @@ a:hover {
 .portfolio {
   text-align: center;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding: 40px 0 40px 0;
 }
 
 .portfolio h1 {
   font-size: 2.5em;
   text-transform: uppercase;
+  font-family: 'Raleway Dots', sans-serif;
+  font-weight: bold;
 }
 
 .portfolio .col-sm-3 h1 {
@@ -306,7 +406,7 @@ a:hover {
 /*ROW blog*/
 .blog{
   background-color: #0c6fbc;
-  padding: 100px 0 100px 0;
+  padding: 150px 0 150px 0;
   display: flex;
   text-align: center;
 }
@@ -330,16 +430,29 @@ a:hover {
 /******************************************************/
 /*ROW contact*/
 .contact {
+  display: flex;
+  align-items: center;
   background-color: #6e6e71;
   padding: 10px 20px 10px 20px;
   color: white;
+  text-align: center;
 }
 
 .contact h1 {
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
+}
+
+.contact .downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact .downloads p a {
+  color: white;
 }
 
 .contact .contact-social {
@@ -347,17 +460,17 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-
 }
 
 .contact-social ul {
   display: flex;
   flex-direction: row;
+  font-size: 1.5em;
 }
 
-.contact-social ul li a{
+.contact-social ul li a {
   padding-left: 10px;
-  color: #0c6fbc;
+  color: #2093d1;
 }
 
 .contact-social ul li a:hover {
@@ -365,8 +478,14 @@ a:hover {
 }
 
 
-.contact .copyright{
-  padding-top: 20px;
+/******************************************************/
+/*ROW contact*/
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e6e71;
+  padding: 0 0 20px 0;
   color: white;
-  float: right;
+  font-size: .9em;
 }

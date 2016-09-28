@@ -29,6 +29,22 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Londrina+Outline|Mallanna|Michroma|Raleway+Dots|Questrial|Raleway" rel="stylesheet">
 
+    <!-- Smooth Scroll -->
+    <script type="text/javascript">
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({scrollTop: target.offset().top - 70}, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
   </head>
 
   <body>
@@ -116,19 +132,19 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="name" class="col-xs-3 control-label">Location</label>
+                <label for="name" class="col-xs-3 control-label">Location:</label>
                 <div class="col-xs-9">
                   Atlanta, Georgia
                 </div>
               </div>
               <div class="form-group">
-                <label for="name" class="col-xs-3 control-label">Email</label>
+                <label for="name" class="col-xs-3 control-label">Email:</label>
                 <div class="col-xs-9">
                   <a href="mailto:jesslyn.landgren@gmail.com">jesslyn.landgren@gmail.com</a>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name" class="col-xs-3 control-label">Web</label>
+                <label for="name" class="col-xs-3 control-label">Web:</label>
                 <div class="col-xs-9">
                   <a href="http://jesslynlandgren.com">jesslynlandgren.com</a>
                 </div>
@@ -143,46 +159,60 @@
               </ul>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 story">
+          <div class="col-xs-12 col-sm-8 story">
             <h1>About Me</h1>
-            <h2>Tagline</h2>
+            <h2>Lover of all things detailed, colorful, and spatial</h2>
+            <p>
+              I am currently a student in the immersive full-stack development bootcamp at <a href="http://digitalcrafts.com">Digital Crafts</a>.  I am coming to the world of development via the environmental and earth sciences.  After a few early career years as an environmental engineering consultant, I knew I wanted to explore my interests in computing and organizing information.  I fell into coding and haven't looked back!  In my spare professional time, I play with geographic applications and visualizations as much as possible.
+            </p>
+            <p>
+              I grew up in North Carolina, and have been in and out of the Atlanta area since.  After finishing the Digital Crafts program in early January 2017, I will be looking for a full-time development position in the north Atlanta metro and OTP north areas.  In my non-professional spare time, I enjoy swimming, hiking, and netflix binges.
+            </p>
           </div>
         </div>
 
         <div class="row skills" id="skills">
           <div class="col-xs-12 col-sm-8">
-            Skills
+            <h1>Skills</h1>
+            <p class="grid TBD">
+              TBD
+            </p>
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="padding-50 wow fadeInRight" data-wow-delay="0.6s" data-wow-offset="5">
-              <h3 class="font-accident-two-normal uppercase">Pro. Experience</h3>
-              <div class="dividewhite4"></div>
-                <div class="experience">
-                  <ul class="">
-                    <li class="date">02/2008 - 04/2010</li>
-                    <li class="company uppercase">
-                      <a>ABC Brodcast Inc. New York.</a>
-                    </li>
-                    <li class="position">Junior Designer</li>
-                  </ul>
-                  <ul class="">
-                    <li class="date">04/2010 - 06/2012</li>
-                    <li class="company uppercase">
-                      <a>Leo Burnett London Office</a>
-                    </li>
-                    <li class="position">Senior Designer</li>
-                  </ul>
-                  <ul class="">
-                    <li class="date">06/2012 - present</li>
-                    <li class="company uppercase">
-                      <a>Google Inc. Dublin.</a>
-                    </li>
-                    <li class="position">UI/UX Designer</li>
-                  </ul>
-                </div>
-              <a href="#!" class="btn btn-wh-trans btn-xs">Learn More</a>
-              <div class="dividewhite1"></div>
-            </div>
+          <div class="col-xs-12 col-sm-4 profexp">
+              <h1 class="profexperience">Professional Experience</h1>
+              <div class="experience">
+                <ul class="timeline">
+                  <li class="date">09/2016 - Present</li>
+                  <li class="company uppercase">
+                    <a class="dot">
+                      Digital Crafts
+                    </a>
+                  </li>
+                  <li class="position">Student</li>
+                  <li class="date">08/2014 - Present</li>
+                  <li class="company uppercase">
+                    <a class="dot">
+                      University of Iowa
+                    </a>
+                  </li>
+                  <li class="position">Graduate Fellow</li>
+                  <li class="date">06/2011 - 08/2014</li>
+                  <li class="company uppercase">
+                    <a class="dot">
+                      ECT
+                    </a>
+                  </li>
+                  <li class="position">Associate Engineer II</li>
+                  <li class="date">08/2006 - 05/2010</li>
+                  <li class="company uppercase">
+                    <a class="dot">
+                      Georgia Tech
+                    </a>
+                  </li>
+                  <li class="position">Student, Environmental Engineering</li>
+                </ul>
+              </div>
+              <a href="#!" class="btn btn-wh-trans btn-xs learnmore">Learn More</a>
           </div>
         </div>
 
@@ -220,25 +250,24 @@
 
         <div class="row blog" id="blog">
           <div class="col-xs-12 medium">
-            <a href="http://medium.com/jesslynlandgren">Find Me on Medium</a>
+            <a target="_blank" href="http://medium.com/@jesslyn.landgren">Find Me on Medium</a>
           </div>
         </div>
 
         <div class="row contact" id="contact">
-          <div class="col-sm-4">
-            <h1>Jesslyn Landgren</h1>
-            <p>
-              Web Design and Full-Stack Development
-            </p>
+          <div class="col-sm-4 downloads">
+            <h1>Download</h1>
+            <p><a target="_blank" href="resume.pdf">Resumé</a></p>
+            <p><a target="_blank" href="cv.pdf">Academic CV</a></p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 contact-middle">
             <h1>Jesslyn Landgren</h1>
             <p>
               Web Design and Full-Stack Development
             </p>
           </div>
           <div class="col-sm-4 contact-social">
-            <h1>Connect with Me</h1>
+            <h1>Connect with Me:</h1>
             <ul>
               <li><a target="_blank" href="mailto:jesslyn.landgren@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
               <li><a target="_blank" href="https://github.com/jesslynlandgren"><i class="fa fa-github fa-lg"></i></a></li>
@@ -246,8 +275,9 @@
               <li><a target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter fa-lg"></i></a></li>
             </ul>
           </div>
-          <span class="copyright">Copyright &copy 2016 Jesslyn Landgren</span>
         </div>
+
+        <div class="row copyright">Copyright &copy 2016 Jesslyn Landgren</div>
 
       </div> <!-- Container Fluid 2 -->
 
