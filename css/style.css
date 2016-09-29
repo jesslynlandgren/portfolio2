@@ -124,10 +124,9 @@ a:hover {
   position: relative;
   background-image: url("../img/twitter_py_background.jpg");
   background-size: cover;
-  /*top: 70px;*/
 }
 
-.filter{
+.home .filter{
   background-color: rgba(0,0,0,.8);
   position: absolute;
   overflow: hidden;
@@ -196,15 +195,14 @@ a:hover {
 }
 
 .summary p{
-
+  font-size: .9em;
 }
 
 /******************************************************/
 /*ROW about*/
 .about {
   background-color: white;
-  /*display: flex;
-  align-items: center;*/
+  display: flex;
 }
 
 .contact-card {
@@ -249,7 +247,9 @@ a:hover {
 .contact-card .about-social {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   font-size: 1.7em;
+  padding-top: 20px;
 }
 
 .contact-card .about-social ul {
@@ -269,7 +269,7 @@ a:hover {
 .story {
   display: flex;
   flex-direction: column;
-  padding: 10px 50px 0px 50px;
+  padding: 10px 50px 20px 50px;
 }
 
 .story h1 {
@@ -287,36 +287,59 @@ a:hover {
 
 .story p {
   color: #000;
-  font-style: italic;
+  font-size: 1.1em;
+  font-family: 'Itim', cursive;
 }
 
 /******************************************************/
 /*ROW skills*/
 .skills {
+  display: flex;
   background-color: white;
   border: 50px solid rgba(12,111,188,.9);
   padding: 20px;
 }
 
-.skills .grid {
+.skills .gridskills {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .skills h1{
+  display: flex;
+  flex-grow: 0;
   font-family: 'Raleway Dots', sans-serif;
   text-transform: uppercase;
   font-size: 1.5em;
 }
 
-.skills .TBD {
-  font-size: 6em;
-  text-align: center;
+.skills .gridskills .grid{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-.skills .profexp {
+.grid li a {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
 
+.grid li a img {
+  height: 80px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
+.grid li label {
+  color: #000;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .skills .timeline {
@@ -325,6 +348,7 @@ a:hover {
 
 .skills .experience {
   border-left: 1px solid #0c6fbc;
+  margin-top: 20px;
   padding-left: 24px;
   margin-left: 70px;
 }
@@ -431,16 +455,29 @@ a:hover {
 /*ROW contact*/
 .contact {
   display: flex;
-  align-items: center;
-  background-color: #6e6e71;
+  flex-direction: column;
+  position: relative;
+  background-image: url("../img/twitter_py_background.jpg");
+  background-size: cover;
+  /*background-color: #6e6e71;*/
   padding: 10px 20px 10px 20px;
   color: white;
   text-align: center;
 }
 
+.contact .filter{
+  background-color: rgba(0,0,0,.8);
+  position: absolute;
+  overflow: hidden;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
 .contact h1 {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway Dots', sans-serif;
   font-size: 1.2em;
   text-transform: uppercase;
 }
@@ -459,7 +496,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .contact-social ul {
@@ -470,21 +507,18 @@ a:hover {
 
 .contact-social ul li a {
   padding-left: 10px;
-  color: #2093d1;
+  /*color: #2093d1;*/
 }
 
 .contact-social ul li a:hover {
   text-decoration: none;
 }
 
-
-/******************************************************/
-/*ROW contact*/
 .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6e6e71;
+  z-index: 10;
   padding: 0 0 20px 0;
   color: white;
   font-size: .9em;
