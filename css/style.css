@@ -34,7 +34,7 @@ a:hover {
 
 .navigation {
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   height: 70px;
   background-color: #0c6fbc;
   position: fixed;
@@ -43,10 +43,17 @@ a:hover {
   box-shadow: 0 2px 3px rgba(110, 110, 110,.4);
 }
 
-.hamburger {
-  display: none;
+.smallnav {
+  display: flex;
   align-items: center;
-  height: 100%;
+}
+
+.hamburger {
+  /*display: none;*/
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  font-family: 'Questrial', 'Arial', sans-serif;
 }
 
 .name {
@@ -58,6 +65,21 @@ a:hover {
   font-weight: bold;
   padding-left: 30px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none !important;
+  }
+
+  .social {
+    display: none !important;
+  }
+
+  .smallnav .name {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .menu {
@@ -115,6 +137,7 @@ a:hover {
 .social ul li a:hover {
   text-decoration: none;
 }
+
 
 /******************************************************/
 /*ROW home*/
@@ -196,6 +219,34 @@ a:hover {
 
 .summary p{
   font-size: .9em;
+}
+
+@media (max-width: 768px) {
+  .home {
+    justify-content: center;
+  }
+
+  .profilepic {
+    display: none;
+  }
+
+  .hello {
+    padding: 10px 40px 20px 40px;
+    width: 100%;
+  }
+
+  .heading {
+    padding: 0 0 0 20px;
+    font-size: 4em;
+  }
+
+  .tagline {
+    padding: 0 0 0 20px;
+  }
+
+  .summary .col-sm-4 {
+    margin-bottom: 20px;
+  }
 }
 
 /******************************************************/
@@ -291,6 +342,12 @@ a:hover {
   font-family: 'Itim', cursive;
 }
 
+@media (max-width: 768px) {
+  .contact-card {
+    display: none;
+  }
+}
+
 /******************************************************/
 /*ROW skills*/
 .skills {
@@ -371,7 +428,7 @@ a:hover {
   color: #000;
 }
 
-.skills .col-sm-4 .experience .timeline li.company a:before {
+.skills .profexp .experience .timeline li.company a:before {
   position: absolute;
   width: 9px;
   height: 9px;
@@ -395,36 +452,120 @@ a:hover {
   margin-left: 70px;
 }
 
+@media (max-width: 768px) {
+  .grid li a img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .profexp{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+}
+
 /******************************************************/
 /*ROW portfolio*/
 .portfolio {
   text-align: center;
   font-weight: bold;
-  padding: 40px 0 40px 0;
+  padding: 30px 40px 40px 40px;
+
 }
 
-.portfolio h1 {
+.portfolio .title {
   font-size: 2.5em;
   text-transform: uppercase;
   font-family: 'Raleway Dots', sans-serif;
   font-weight: bold;
+  margin-bottom: 20px;
+  border: 1px solid yellow;
 }
 
-.portfolio .col-sm-3 h1 {
+.portfolio .project h1 {
   font-size: 1.4em;
   font-weight: bold;
+  border: 1px solid red;
+  margin: 0;
 }
 
-.portfolio .col-sm-3 img{
+.portfolio .project img{
   width: 50%;
   height: auto;
+  border: 1px solid blue;
 }
 
-.portfolio .col-sm-3 p {
+.portfolio .project p {
   font-weight: bold;
   font-size: .8em;
-
+  border: 1px solid green;
 }
+
+@media (min-width: 992px) {
+  .portfolio {
+    background-color: darkred;
+  }
+
+  .portfolio .project img {
+    width: 70%;
+  }
+
+  .portfolio .project p {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio {
+    background-color: lightgreen;
+  }
+  .portfolio .project p {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    background-color: lightblue;
+    padding: 40px 60px 30px 60px;
+  }
+
+  .portfolio .project img {
+    width: 20%;
+  }
+
+  .portfolio .project p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 544px) {
+  .portfolio {
+    background-color: darkblue;
+    padding: 40px 60px 30px 60px;
+  }
+
+  .portfolio .project p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
+
 
 /******************************************************/
 /*ROW blog*/
