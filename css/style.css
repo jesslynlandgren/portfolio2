@@ -488,31 +488,31 @@ a:hover {
   font-family: 'Raleway Dots', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 
 .portfolio .project h1 {
   font-size: 1.4em;
   font-weight: bold;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin: 0;
 }
 
 .portfolio .project img{
   width: 50%;
   height: auto;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .portfolio .project p {
   font-weight: bold;
   font-size: .8em;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 @media (min-width: 992px) {
   .portfolio {
-    background-color: darkred;
+    /*background-color: darkred;*/
   }
 
   .portfolio .project img {
@@ -526,7 +526,7 @@ a:hover {
 
 @media (max-width: 992px) {
   .portfolio {
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
   }
   .portfolio .project p {
     font-size: .9em;
@@ -535,7 +535,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .portfolio {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     padding: 40px 60px 30px 60px;
   }
 
@@ -551,7 +551,7 @@ a:hover {
 
 @media (max-width: 544px) {
   .portfolio {
-    background-color: darkblue;
+    /*background-color: darkblue;*/
     padding: 40px 60px 30px 60px;
   }
 
