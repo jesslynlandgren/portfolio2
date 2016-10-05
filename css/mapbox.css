@@ -1,0 +1,117 @@
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  /*border: 4px solid blue;*/
+}
+
+body {
+  height: 100%;
+  /*border: 4px solid green;*/
+}
+
+.top {
+  height:
+  background-color: white;
+}
+
+.grid {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /*border: 4px solid red;*/
+}
+
+.gridrow {
+  height: 25%;
+  padding: 0;
+  margin: 0;
+  /*border: 4px solid purple;*/
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-image: url('../img/twitter_py_background.jpg');
+  /*border: 3px solid #3e3e3e;*/
+}
+
+.filter{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,.5);
+  /*border: 4px solid green;*/
+}
+
+.filter:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+.filter a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.filter a:hover{
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  background-color: #3887be;
+  color: white;
+  border-bottom: 4px solid #2c6994;
+}
+.title {
+  font-size: 2.75em;
+  /*border: 1px solid green;*/
+}
+.description {
+  padding: 10px 10px 5px 5px;
+}
+
+.description a {
+  color: white;
+  font-weight: bolder;
+}
+
+.descritionLarge {
+  font-size: 1.3em;
+}
+
+.descriptionSmall{
+  font-size: 1em;
+}
+
+.credit {
+  text-align: right;
+  padding-top: 10px;
+  /*border: 1px solid yellow;*/
+}
+
+.credit a{
+  font-family: 'Questrial', sans-serif;
+  color: white;
+}
+
+.credit .legal {
+  font-size: .7em;
+}
