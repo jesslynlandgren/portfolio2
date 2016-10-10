@@ -14,7 +14,6 @@ body {
 }
 
 .top {
-  height:
   background-color: white;
 }
 
@@ -38,8 +37,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-image: url('../img/twitter_py_background.jpg');
-  /*border: 3px solid #3e3e3e;*/
+  border: 3px solid #3e3e3e;
 }
 
 .filter{
@@ -49,8 +47,8 @@ body {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  min-height: 100%;
-  background-color: rgba(0,0,0,.5);
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
   /*border: 4px solid green;*/
 }
 
@@ -59,6 +57,7 @@ body {
 }
 
 .filter a {
+  /*border: 4px solid red;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,3 +114,14 @@ body {
 .credit .legal {
   font-size: .7em;
 }
+
+.box1{
+  background-image: url('../img/box1.png');
+  background-size: cover;
+}
+
+.box2,.box9,.box15{background-color: #5BC0EB;}
+.box3,.box8,.box13,.box10{background-color: #FDE74C;}
+.box5,.box11,.box14{background-color: #9BC53D;}
+.box4,.box6,.box12{background-color: #E55934;}
+.box7,.box11,.box16{background-color: #FA7921;}
