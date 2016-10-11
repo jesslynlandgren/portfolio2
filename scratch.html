@@ -1,3 +1,30 @@
+var bar = document.getElementById("hamburger");
+var navbars = document.getElementById("vertmenu");
+var navbarlinks = document.querySelectorAll();
+var body = document.querySelectorAll("body");
+var clicked = false;
+
+bar.addEventListener("click", function() {
+if (!clicked) {
+  navbars.style.display = "block";
+  clicked = true;
+} else {
+    navbars.style.display = "";
+    clicked = false;
+}
+// navbars.classList.toggle("hide");
+});
+
+if (window.innerWidth <  768) {
+for (var i = 0; i < navbarlinks.length; i++) {
+  navbarlinks[i].addEventListener("click", function() {
+    navbars.style.display = "none";
+  });
+}
+}
+
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 

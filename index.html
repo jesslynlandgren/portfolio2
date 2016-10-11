@@ -53,38 +53,64 @@
       <div class="container-fluid container1">
         <!-- NavBar Row -->
         <div class="row navigation">
-          <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 smallnav">
-            <div class="hamburger">
-              <i class="fa fa-bars"></i>
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 smallnav">
+            <div id="dropdown" class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><i id="hamburger" class="fa fa-bars"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#blog">blog</a>
+                <a href="#contact">contact</a>
+              </div>
             </div>
             <div class="name">
-              Jesslyn Landgren
+              Jesslyn <span class="lastname">Landgren</span>
             </div>
           </div>
-          <div class="col-sm-5 col-md-5 col-lg-5 menu" id="menu">
-            <ul>
-              <li><a href="#about">about</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#portfolio">portfolio</a></li>
-              <li><a href="#blog">blog</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3 social">
-            <ul>
-              <li><a target="_blank" href="mailto:jesslyn.landgren@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
-              <li><a target="_blank" href="https://github.com/jesslynlandgren"><i class="fa fa-github fa-lg"></i></a></li>
-              <li><a target="_blank" href="http://linkedin.com/in/jesslynlandgren"><i class="fa fa-linkedin fa-lg"></i></a></li>
-              <li><a target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter fa-lg"></i></a></li>
-            </ul>
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 bignav">
+            <div class="menu" id="menu">
+              <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul>
+                <li><a target="_blank" href="mailto:jesslyn.landgren@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+                <li><a target="_blank" href="https://github.com/jesslynlandgren"><i class="fa fa-github fa-lg"></i></a></li>
+                <li><a target="_blank" href="http://linkedin.com/in/jesslynlandgren"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                <li><a target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter fa-lg"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div> <!-- Container Fluid 1-->
     </nav>
 
-    <div class="container-fluid container2" style="padding: 0;">
+    <script type="text/javascript">
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matchesSelector('#hamburger')) {
 
-      <!-- Home Row/Banner -->
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+    <div class="container-fluid container2" style="padding: 0;">
       <div class="row home">
         <div class="filter">
         </div>
@@ -96,8 +122,7 @@
             Hi, I'm Jesslyn
           </div>
           <div class="row tagline">
-            Full-stack developer in training <span style="white-space: nowrap">(
-              <a class="dclink" href="http://digitalcrafts.com"><span style="color: #a6aaab;">#</span><span style="color: #f47820;">builder</span><span style="color: #0c6fb8;">of</span><span style="color: #5b893b;">things</span></a>)</span><br><span class="tagline-small">Detail lover | Maps Rule!</span>
+            Full-stack developer in training <span style="white-space: nowrap">(<a class="dclink" href="http://digitalcrafts.com"><span style="color: #a6aaab;">#</span><span style="color: #f47820;">builder</span><span style="color: #0c6fb8;">of</span><span style="color: #5b893b;">things</span></a>)</span><br><span class="tagline-small">Detail lover | Maps Rule!</span>
           </div>
           <div class="row summary">
             <div class="col-xs-12 col-sm-4">
@@ -280,7 +305,6 @@
           <div class="col-sm-4 downloads">
             <h1>Download</h1>
             <p><a target="_blank" href="resume.pdf">Resumé</a></p>
-            <p><a target="_blank" href="cv.pdf">Academic CV</a></p>
           </div>
           <div class="col-sm-4 contact-middle">
             <h1>Jesslyn Landgren</h1>
