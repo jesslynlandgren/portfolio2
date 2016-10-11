@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="name">
-              Jesslyn <span class="lastname">Landgren</span>
+              Jesslyn<span class="lastname">&nbspLandgren</span>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8 bignav">
@@ -84,6 +84,7 @@
                 <li><a target="_blank" href="https://github.com/jesslynlandgren"><i class="fa fa-github fa-lg"></i></a></li>
                 <li><a target="_blank" href="http://linkedin.com/in/jesslynlandgren"><i class="fa fa-linkedin fa-lg"></i></a></li>
                 <li><a target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a target="_blank" href="http://medium.com/@jesslynlandgren"><i class="fa fa-medium fa-lg"></i></a></li>
               </ul>
             </div>
           </div>
@@ -92,22 +93,22 @@
     </nav>
 
     <script type="text/javascript">
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function(event) {
-      if (!event.target.matchesSelector('#hamburger')) {
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matchesSelector('#hamburger')) {
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
           }
         }
       }
-    }
     </script>
 
     <div class="container-fluid container2" style="padding: 0;">
@@ -293,8 +294,47 @@
       </div>
 
       <div class="row blog" id="blog">
-        <div class="col-xs-12 medium">
-          <a target="_blank" href="http://medium.com/@jesslyn.landgren">Find Me on Medium</a>
+        <div class="col-xs-12 col-md-5 medium">
+          <p>
+            I blog about being in a coding bootcamp, my current projects, current happenings in tech (and elsewhere!) that peak my interest, and collect pretty maps.
+          </p>
+          <button class="mediumbutton" type="button" name="button"><i style="color: #00AB6C;" class="fa fa-medium"></i> @jesslynlandgren</button>
+        </div>
+        <div class="well">
+          <div class="col-xs-12 col-md-7 carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <a href="https://medium.com/@jesslyn.landgren/hes-dead-jim-hangman-command-line-game-e2a7932e7f79#.24vlyggg6">
+                    <img src="hangman/img/hangman4.png" alt="Hangman">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://medium.com/@jesslyn.landgren/hes-dead-jim-hangman-command-line-game-e2a7932e7f79#.24vlyggg6">
+                    <img src="hangman/img/hangman4.png" alt="Hangman">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://medium.com/@jesslyn.landgren/hes-dead-jim-hangman-command-line-game-e2a7932e7f79#.24vlyggg6">
+                    <img src="hangman/img/hangman4.png" alt="Hangman">
+                  </a>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -302,23 +342,24 @@
         <div class="filter">
         </div>
         <div class="">
-          <div class="col-sm-4 downloads">
+          <div class="col-xs-0 col-sm-4 downloads">
             <h1>Download</h1>
             <p><a target="_blank" href="resume.pdf">Resumé</a></p>
           </div>
-          <div class="col-sm-4 contact-middle">
+          <div class="col-xs-6 col-sm-4 contact-middle">
             <h1>Jesslyn Landgren</h1>
             <p>
               Web Design and Full-Stack Development
             </p>
           </div>
-          <div class="col-sm-4 contact-social">
+          <div class="col-xs-6 col-sm-4 contact-social">
             <h1>Connect with Me:</h1>
             <ul>
               <li><a target="_blank" href="mailto:jesslyn.landgren@gmail.com"><i style="color: #a6aaab;" class="fa fa-envelope fa-lg"></i></a></li>
               <li><a target="_blank" href="https://github.com/jesslynlandgren"><i style="color: #f47820;" class="fa fa-github fa-lg"></i></a></li>
               <li><a target="_blank" href="http://linkedin.com/in/jesslynlandgren"><i style="color: #5b893b;" class="fa fa-linkedin fa-lg"></i></a></li>
               <li><a target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter fa-lg"></i></a></li>
+              <li><a target="_blank" href="http://linkedin.com/in/jesslynlandgren"><i style="color: #00AB6C;" class="fa fa-medium fa-lg"></i></a></li>
             </ul>
           </div>
         </div>

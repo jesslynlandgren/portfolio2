@@ -58,22 +58,6 @@ a:hover {
   display: none;
 }
 
-/* Dropdown Button */
-/*.dropbtn {
-  display: none;
-}
-
-#hamburger {
-  display: none;
-}
-
-.dropdown-content {
-  display: none;
-
-.show {
-  display:block;
-}*/
-
 .name {
   /*border: 4px solid red;*/
   display: flex;
@@ -127,12 +111,13 @@ a:hover {
 }
 
 .social {
-  border: 4px solid yellow;
+  /*border: 4px solid yellow;*/
   display: flex;
   flex-grow: 1;
   align-items: center;
   height: 100%;
   justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .social ul {
@@ -673,24 +658,43 @@ a:hover {
 /*ROW blog*/
 .blog{
   background-color: #0c6fbc;
-  padding: 150px 0 150px 0;
+  padding: 50px 50px 50px 50px;
   display: flex;
+  align-items: center;
   text-align: center;
 }
 
-.blog .medium a{
-  font-size: 3em;
+.blog .medium {
+  border: 4px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 50px;
+}
+
+.blog .medium p {
+  border: 4px solid orange;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.blog .medium .mediumbutton{
+  border: 4px solid yellow;
+  font-size: 2em;
   font-weight: bold;
   font-family: 'Questrial', sans-serif;
   color: #545454;
   background-color: white;
+  border: none;
   border-bottom: 3px solid #dedede;
   border-radius: 4px;
-  padding: 10px 20px 10px 20px;
 }
 
-.blog .medium a:hover{
-  background-color: #dedede;
+.blog .well {
+  display: flex;
+
 }
 
 
@@ -726,9 +730,17 @@ a:hover {
 }
 
 .contact .downloads {
+  /*border: 4px solid red;*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.contact .contact-middle {
+  /*border: 4px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact .downloads p a {
@@ -736,10 +748,12 @@ a:hover {
 }
 
 .contact .contact-social {
+  /*border: 4px solid blue;*/
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /*justify-content: center;*/
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .contact-social ul {
@@ -768,7 +782,20 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .downloads {
+  .contact .downloads {
     display: none;
   }
+
+  .contact .contact-middle {
+    align-items: flex-start;
+  }
+
+  .contact .contact-social ul li a i {
+    font-size: 1em;
+  }
+
+  .copyright {
+    padding-top: 10px;
+  }
+
 }
