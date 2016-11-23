@@ -58,11 +58,254 @@ a:hover {
     display: flex;
     flex-grow: 2;
     justify-content: center;
+<<<<<<< HEAD
     align-items: center;
     padding: 5px 20px 5px 20px;
     font-family: 'Text Me One', sans-serif;
     text-transform: uppercase;
     background-color: #494949;
+=======
+  }
+
+  .profilepic {
+    display: none;
+  }
+
+  .hello {
+    padding: 10px 40px 20px 40px;
+    width: 100%;
+  }
+
+  .heading {
+    padding: 0 0 0 20px;
+    font-size: 4em;
+  }
+
+  .tagline {
+    padding: 0 0 0 20px;
+  }
+
+  .summary .col-sm-4 {
+    margin-bottom: 20px;
+  }
+}
+
+/******************************************************/
+/*ROW about*/
+.about {
+  background-color: white;
+  display: flex;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  background-color: #373737;
+  padding: 20px 20px 20px 20px;
+}
+
+.contact-card h1 {
+  text-transform: uppercase;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.2em;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact-form {
+  font-size: 1.2em;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.contact-form .form-group {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.contact-form .form-group label {
+  display: flex;
+  justify-content: flex-end;
+  color: #8f8f8f;
+  font-weight: bold;
+  padding: 0;
+}
+
+.contact-form a {
+  color: white;
+}
+
+.contact-card .about-social {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.7em;
+  padding-top: 20px;
+}
+
+.contact-card .about-social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-card .about-social ul li a{
+  padding-left: 10px;
+  color: #0c6fbc;
+}
+
+.contact-card .about-social ul li a:hover {
+  text-decoration: none;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 30px 50px;
+}
+
+.story h1 {
+  text-transform: uppercase;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.2em;
+  color: #000;
+}
+
+.story h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.3em;
+  color: #373737;
+}
+
+.story p {
+  color: #000;
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    display: none;
+  }
+}
+
+/******************************************************/
+/*ROW skills*/
+.skills {
+  /*display: flex;*/
+  background-color:#878787;
+  /*border: 50px solid rgba(12,111,188,.9);*/
+  /*border: 50px solid black;*/
+}
+
+.skills .gridskills {
+  /*border: 4px solid red;*/
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 20px 80px;
+}
+
+.skills h1{
+  display: flex;
+  flex-grow: 0;
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  color: #000;
+}
+
+.skills .gridskills .grid{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+.grid li a {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.grid li a img {
+  height: 65px;
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
+}
+
+.grid li label {
+  color: #000;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.skills .profexp {
+  /*border: 4px solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px 50px 30px 0px;
+}
+
+.skills .expcenter {
+  /*border: 4px solid yellow;*/
+  text-align: right;
+}
+
+.skills .experience {
+  border-right: 1px solid #272727;
+  /*border: 4px solid blue;*/
+  margin-top: 20px;
+  padding-right: 24px;
+  margin-left: 70px;
+  text-align: right;
+}
+
+.skills .timeline {
+  /*border: 4px solid orange;*/
+  margin-bottom: 20px;
+}
+
+
+
+.skills .experience ul {
+  list-style: none;
+  text-align: right;
+}
+
+.skills .experience ul .date {
+  font-size: 12px;
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;
+}
+
+.skills .experience ul .company {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.skills .experience li.company a {
+  position: relative;
+  color: #000;
+}
+
+.skills .profexp .experience .timeline li.company a:before {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 4px;
+  top: 5px;
+  right: -29px;
+  background: #000;
+  content: "";
+>>>>>>> 891b8ccd303bb141caf37f05e0103bde87542a1d
 }
 
 .navmenu a{
@@ -94,8 +337,19 @@ a:hover {
     background-color: white;
 }
 
+<<<<<<< HEAD
 .email {background-color: #dd4b39;}
 .email:hover {color: #dd4b39;}
+=======
+.portfolio .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  /*border: 1px solid yellow;*/
+}
+>>>>>>> 891b8ccd303bb141caf37f05e0103bde87542a1d
 
 .github {background-color: black;}
 .github:hover {color: black;}
