@@ -1,31 +1,25 @@
-$(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 70
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
 $(document).ready(function(){
-    var navHeight = $('.container-nav').height();
+    var navHeight = $('.navigation').height();
     var windowHeight = $(window).height();
-    var windowWidth = $(window).width();
-    $('.container-main').css('margin-top', navHeight);
-    $('.section').css('height', windowHeight - navHeight);
-    $('.background-image').css('width', windowHeight);
+    $('.tag').css('height', (windowHeight - navHeight));
+    $('.tag').css('padding-top', navHeight);
+    var skillsHeight = $('.skills').height();
+    $('.filter-skills').css('height', skillsHeight);
+    var contactHeight = $('.contact').height();
+    $('.filter-contact').css('height', contactHeight);
+    var iconWidth = $('.skill-icon').width();
+    $('.icon-grid').css('max-width', iconWidth);
 });
 
 $(window).resize(function(){
-    var navHeight = $('.container-nav').height();
+    var navHeight = $('.navigation').height();
     var windowHeight = $(window).height();
-    $('.container-main').css('margin-top', navHeight);
-    $('.section').css('height', windowHeight - navHeight);
-    $('.background-image').css('height', windowHeight);
+    $('.tag').css('height', (windowHeight - navHeight));
+    $('.tag').css('padding-top', navHeight);
+    var skillsHeight = $('.skills').height();
+    $('.filter-skills').css('height', skillsHeight);
+    var contactHeight = $('.contact').height();
+    $('.filter-contact').css('height', contactHeight);
+    var iconWidth = $('.skill-icon').width();
+    $('.icon-grid').css('max-width', iconWidth);
 });
